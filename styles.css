@@ -7,28 +7,37 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: wheat;
+    background-color: white;
 }
 
-/* Header and navigation */
+/* Header */
 header {
-    background-color: #33C6B2;
-    color: #fff;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: wheat;
+    padding: 17px;
 }
 
-nav {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
 }
 
-.logo {
-    font-size: 24px;
-    font-family: Helvetica;
-    font-weight: bold;
+.logo-section img::selection {
+    background-color: whitesmoke;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+#paw {
+    width: 60px;
+    margin-right: 10px;
+}
+
+#paw2 {
+    height: 40px;
 }
 
 nav ul {
@@ -38,16 +47,114 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
+    text-align: center;
 }
 
 nav ul li a {
-    color: #fff;
+    font-size: 17px;
+    color: #b73100 ;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a::selection {
+    background-color: #3d3d3d;
+    color: whitesmoke;
+}
+
+nav ul li a:hover {
+    color: #392C6B;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: wheat; /* Match the navbar's background color */
+    right: 0; /* Align to the bottom left of the button */
+}
+
+.dropdown-content a {
+    color: #b73100; /* Match the navbar link color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    /* background-color: #392C6B; Match the navbar link hover color */
+}
+
+.dropdown:hover {
+    /* background-image: url('resources/upload.png');     */
+}
+
+.dropdown-link img {
+    transition: transform 0.15s;/* Add transition for smooth effect */
+}
+
+.dropdown-link:hover img {
+    transform: rotate(180deg);
+}
+
+.dropdown-link:hover {
+    filter: saturate(0%);
+}
+
+.dropbtn:hover {
+    .dropdown-link:hover {
+        filter: saturate(0%);
+    }
+    .dropdown-link:hover img {
+        transform: rotate(180deg);
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: #b73100;
+    font-size: 17px;
+    font-weight: bold;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+    /* Add down arrow icon */
+    /* background-image: url('down.png');
+    background-position: right 10px center; /* Adjusted position */
+    /* background-repeat: no-repeat;  */
+}
+
+.dropdown:hover .dropbtn {
+    color: #392C6B; 
+}
+
+nav ul li img {
+    height: 20px;
+    vertical-align: middle;
+}
+/* Media query to adjust dropdown position or size on smaller screens */
+@media (max-width: 600px) {
+    .dropdown-content {
+        min-width: 100px; /* Adjust width for smaller screens */
+        /* Additional adjustments as needed */
+    }
 }
 
 /* Hero section */
 .hero {
-    /* background-image: url('hero-image.jpg'); */
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -96,14 +203,26 @@ footer {
     background-color: #414141;
     color: #D9D9D9;
     padding: 20px;
-    /* display: flex; */
-    /* text-align: center;
-    align-items: center; */
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: max-contents;
+    align-self: center;
+    gap: 40px;
+}
+
+.footer-links ul a::selection, .footer-links p::selection, .contact p::selection, .contact ul li::selection, .credits p::selection {
+    background-color: whitesmoke;
+    color: #777;
 }
 
 .footer-links p, .contact p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
+    color: white;
 }
 
 .footer-links ul, .contact ul {
@@ -112,30 +231,16 @@ footer {
     font-size: 15px;
 }
 
-.footer-links, .contact {
-    /* width: 200px; */
-    /* width: max-content; */
-    /* left: 50%; */
-    /* margin-left: -50%; */
-    margin-left: auto;
-    margin-right: auto;
-}
+.footer-links ul a:hover {
+    color: white;
+} 
 
 .footer-links {
-    margin-right: 00px;
     width: max-content;
 }
 
-.contact {
-    width: 350px;
-}
-
-.content {
-    display: flex;
-}
-
 .link {
-    color: #D9D9D9 ;
+    color: #D9D9D9;
     text-decoration: none;
 }
 
@@ -145,6 +250,8 @@ footer {
     border-top: none;
     border-left: none;
     border-right: none;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .credits {
