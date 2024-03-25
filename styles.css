@@ -48,6 +48,12 @@ nav ul {
 nav ul li {
     margin-left: 20px;
     text-align: center;
+    transition: transform 0.2s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.01); /* Increase the scale by 1% */
+    align-items: center;
 }
 
 nav ul li a {
@@ -58,13 +64,22 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a::selection {
+nav ul li a::selection, .dropdown-link img::selection {
     background-color: #3d3d3d;
     color: whitesmoke;
 }
 
 nav ul li a:hover {
     color: #392C6B;
+}
+
+.logo-section {
+    display: flex;
+    transition: transform 0.2s ease;
+}
+
+.logo-section:hover {
+    transform: scale(1.01); /* Increase the scale by 1% */
 }
 
 .dropdown {
@@ -78,7 +93,7 @@ nav ul li a:hover {
     min-width: 160px;
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background-color: wheat; /* Match the navbar's background color */
+    background-color: rgb(255, 238, 208); /* Match the navbar's background color */
     right: 0; /* Align to the bottom left of the button */
 }
 
@@ -89,33 +104,13 @@ nav ul li a:hover {
     display: block;
 }
 
-.dropdown-content a:hover {
-    /* background-color: #392C6B; Match the navbar link hover color */
-}
-
-.dropdown:hover {
-    /* background-image: url('resources/upload.png');     */
-}
-
 .dropdown-link img {
     transition: transform 0.15s;/* Add transition for smooth effect */
 }
 
-.dropdown-link:hover img {
+.dropdown-link:hover img, .dropdown:hover .dropdown-link img {
     transform: rotate(180deg);
-}
-
-.dropdown-link:hover {
     filter: saturate(0%);
-}
-
-.dropbtn:hover {
-    .dropdown-link:hover {
-        filter: saturate(0%);
-    }
-    .dropdown-link:hover img {
-        transform: rotate(180deg);
-    }
 }
 
 .dropdown:hover .dropdown-content {
@@ -212,7 +207,7 @@ footer {
     justify-content: center;
     width: max-contents;
     align-self: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 .footer-links ul a::selection, .footer-links p::selection, .contact p::selection, .contact ul li::selection, .credits p::selection {
