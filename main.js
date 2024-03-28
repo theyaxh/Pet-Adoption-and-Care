@@ -1,4 +1,4 @@
-const isUserSignedIn = true;
+const isUserSignedIn = false;
 
 const signinSection = document.getElementById('signin-section');
 const accountSection = document.getElementById('account-section');
