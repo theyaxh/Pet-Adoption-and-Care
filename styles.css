@@ -29,6 +29,11 @@ header {
 .logo-section {
     display: flex;
     align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.logo-section:hover {
+    transform: scale(1.01);
 }
 
 #paw {
@@ -51,8 +56,8 @@ nav ul li {
     transition: transform 0.2s ease;
 }
 
-nav ul li:hover {
-    transform: scale(1.01); /* Increase the scale by 1% */
+nav ul li:hover, .dropdown-content a:hover {
+    transform: scale(1.01);
     align-items: center;
 }
 
@@ -73,15 +78,6 @@ nav ul li a:hover {
     color: #392C6B;
 }
 
-.logo-section {
-    display: flex;
-    transition: transform 0.2s ease;
-}
-
-.logo-section:hover {
-    transform: scale(1.01); /* Increase the scale by 1% */
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -93,19 +89,25 @@ nav ul li a:hover {
     min-width: 160px;
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background-color: rgb(255, 238, 208); /* Match the navbar's background color */
-    right: 0; /* Align to the bottom left of the button */
+    background-color: rgb(255, 238, 208);
+    right: 0;
 }
 
 .dropdown-content a {
-    color: #b73100; /* Match the navbar link color */
+    color: #b73100;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(228, 196, 138); 
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
 }
 
 .dropdown-link img {
-    transition: transform 0.15s;/* Add transition for smooth effect */
+    transition: transform 0.15s;
 }
 
 .dropdown-link:hover img, .dropdown:hover .dropdown-link img {
@@ -123,13 +125,8 @@ nav ul li a:hover {
     color: #b73100;
     font-size: 17px;
     font-weight: bold;
-    /* padding: 16px; */
     font-size: 16px;
     border: none;
-    /* Add down arrow icon */
-    /* background-image: url('down.png');
-    background-position: right 10px center; /* Adjusted position */
-    /* background-repeat: no-repeat;  */
 }
 
 .dropdown:hover .dropbtn {
@@ -140,11 +137,11 @@ nav ul li img {
     height: 20px;
     vertical-align: middle;
 }
+
 /* Media query to adjust dropdown position or size on smaller screens */
 @media (max-width: 600px) {
     .dropdown-content {
-        min-width: 100px; /* Adjust width for smaller screens */
-        /* Additional adjustments as needed */
+        min-width: 100px;
     }
 }
 
@@ -193,6 +190,60 @@ nav ul li img {
     text-align: center;
 }
 
+.parallel-sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.featured-pets {
+    text-align: center;
+}
+
+.featured-pets h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pet-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add some space between images and button */
+}
+
+.featured-pets img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.featured-pets button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-buttons {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.auth-buttons button {
+    /* height: 30px; */
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     background-color: #414141;
@@ -224,6 +275,10 @@ footer {
     font-weight: normal;
     list-style: none;
     font-size: 15px;
+}
+
+.footer-links ul:visited {
+    color: #D9D9D9;
 }
 
 .footer-links ul a:hover {
