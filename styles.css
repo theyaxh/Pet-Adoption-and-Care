@@ -69,7 +69,7 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a::selection, .dropdown-link img::selection {
+nav ul li a::selection, .dropdown-link img::selection, .dropdown::selection {
     background-color: #3d3d3d;
     color: whitesmoke;
 }
@@ -263,7 +263,7 @@ footer {
 
 .footer-links ul a::selection, .footer-links p::selection, .contact p::selection, .contact ul li::selection, .credits p::selection {
     background-color: whitesmoke;
-    color: #777;
+    color: #555;
 }
 
 .footer-links p, .contact p {
@@ -309,4 +309,54 @@ footer {
     font-family: Arial;
     text-align: center;
     font-size: 14px;
+}
+
+/*About*/
+.about-section h1 {
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    color: #8B0000;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section a {
+    color: #333;
+}
+
+.about-section h1::selection, .about-section h2::selection, .about-section p::selection, .about-section a::selection, .about-section li::selection {
+    background-color: #3d3d3d;
+    color: whitesmoke;
+}
+
+.content-wrapper {
+    position: relative;
+    background-image: url('resources/Asset 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: calc(100vh - 100px); /* Adjust based on the height of your header and footer */
+}
+
+.about-section {
+    position: relative;
+    z-index: 1; /* Ensures the section appears above the background image */
+    width: 65%; /* Adjust as needed */
+    margin: 0 auto; /* Centers the section horizontally */
+    padding: 40px; /* Optional: Adds some padding inside the section */
+    background-color: rgb(255, 254, 249); /* Optional: Adds a semi-transparent background to the section */
+    box-shadow: -10px 0 10px -5px rgba(0,0,0,0.2), 10px 0 10px -5px rgba(0,0,0,0.2);
 }
