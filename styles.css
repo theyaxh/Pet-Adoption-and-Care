@@ -238,7 +238,7 @@ nav ul li img {
     background-color: #ff6347;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     border: none;
     border-radius: 24px;
     cursor: pointer;
@@ -335,6 +335,7 @@ footer {
 
 .about-section a {
     color: #333;
+    cursor: pointer;
 }
 
 .about-section h1::selection, .about-section h2::selection, .about-section p::selection, .about-section a::selection, .about-section li::selection {
@@ -343,6 +344,7 @@ footer {
 }
 
 .content-wrapper {
+    z-index: -1;
     position: relative;
     background-image: url('resources/Asset 1.png');
     background-repeat: no-repeat;
@@ -353,7 +355,6 @@ footer {
 
 .about-section {
     position: relative;
-    z-index: 1; /* Ensures the section appears above the background image */
     width: 65%; /* Adjust as needed */
     margin: 0 auto; /* Centers the section horizontally */
     padding: 40px; /* Optional: Adds some padding inside the section */

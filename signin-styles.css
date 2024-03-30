@@ -1,0 +1,156 @@
+/* Common Styles */
+body {
+    background-color: wheat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.paw img {
+    height: 90px;
+    width: auto;
+}
+
+.login-section, .signup-section {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: rgb(255, 254, 249);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-section h2, .signup-section h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #8B0000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+.login-section form, .signup-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label, .signup-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"],
+.signup-section input[type="text"],
+.signup-section input[type="email"],
+.signup-section input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.paw img::selection, .login-section label::selection, .signup-section label::selection, .login-section h2::selection, .signup-section h2::selection, .footer-links a::selection, .login-section a::selection, .signup-section a::selection, .login-option p::selection, .signup-option p::selection, .login-section input::selection, .signup-section input::selection, .login-section button::selection, .signup-section button::selection {
+    background-color: #3d3d3d;
+    color: whitesmoke;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember-me, .terms-conditions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.remember-me label, .terms-conditions label {
+    font-weight: 600;
+    margin-bottom: auto;
+}
+
+.remember-me input[type="checkbox"],
+.terms-conditions input[type="checkbox"] {
+    margin: 0;
+}
+
+.login-section a, .signup-section a {
+    color: #8B0000;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.login-section button[type="submit"], .signup-section button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.login-section button[type="submit"]:hover, .signup-section button[type="submit"]:hover {
+    background-color: #e65c4f;
+}
+
+.login-option, .signup-option {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: max-contents;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer-links {
+    margin-bottom: 25px;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #8B0000;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    color: #392C6B;
+}
+
