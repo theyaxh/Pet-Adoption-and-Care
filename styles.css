@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-    background-color: wheat;
+    background-color: rgb(255, 222, 161);
     padding: 17px;
 }
 
@@ -87,7 +87,7 @@ nav ul li a:hover {
     display: none;
     position: absolute;
     min-width: 160px;
-    z-index: 1;
+    z-index: 3;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: rgb(255, 238, 208);
     right: 0;
@@ -120,6 +120,7 @@ nav ul li a:hover {
 }
 
 .dropbtn {
+    z-index: 2;
     background-color: transparent;
     border: none;
     color: #b73100;
@@ -227,7 +228,6 @@ nav ul li img {
 
 .auth-buttons {
     display: flex;
-    /* flex-direction: column; */
     gap: 10px;
 }
 
@@ -246,7 +246,7 @@ nav ul li img {
 
 /* Footer */
 footer {
-    background-color: #414141;
+    background-color: #323232;
     color: #D9D9D9;
     padding: 20px;
     align-items: center;
@@ -335,7 +335,6 @@ footer {
 
 .about-section a {
     color: #333;
-    cursor: pointer;
 }
 
 .about-section h1::selection, .about-section h2::selection, .about-section p::selection, .about-section a::selection, .about-section li::selection {
@@ -354,10 +353,143 @@ footer {
 }
 
 .about-section {
+    z-index: 2;
     position: relative;
     width: 65%; /* Adjust as needed */
     margin: 0 auto; /* Centers the section horizontally */
     padding: 40px; /* Optional: Adds some padding inside the section */
     background-color: rgb(255, 254, 249); /* Optional: Adds a semi-transparent background to the section */
     box-shadow: -10px 0 10px -5px rgba(0,0,0,0.2), 10px 0 10px -5px rgba(0,0,0,0.2);
+}
+
+/* Donate Section */
+.donate-main {
+    background-image: url('resources/2148765183.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.donate-section {
+    background-color: rgba(0, 0, 0, 0.599);
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.donate-section h2 {
+    font-size: 28px;
+    color: rgb(216, 216, 216);
+    margin-bottom: 20px;
+}
+
+.cp {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e6e6e6;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.donation-option {
+    height: 72px;
+    background-color: rgba(249, 249, 249, 0.41);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.donation-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(249, 249, 249, 0.512);
+}
+
+.donation-option h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #101010;
+}
+
+.donation-option h3 img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.d2 h3 img {
+    height: 27px;
+}
+
+.donation-option h3 span {
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.donate-section h2::selection, .donate-section span::selection, .donate-section img::selection, .donate-section p::selection, .donate-section h3::selection, .donate-section br::selection {
+    background-color:#e6e6e6;
+    color: #1d1d1d;
+}
+
+.net-banking-option {
+    background-color: rgba(249, 249, 249, 0.512);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    align-content: center;
+}
+
+.net-banking-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.275);
+}
+
+.net-banking-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.net-banking-header h3 {
+    font-size: 20px;
+    color: #101010;
+    display: flex;
+    align-items: center;
+}
+
+.net-banking-header h3 img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.bank-info-container {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.bank-info {
+    font-size: 15px;
+    color: #101010;
+    margin-bottom: 10px;
+}
+
+.bi {
+    color: #101010;
+    font-size: 17px;
 }
