@@ -10,7 +10,7 @@ Pawfect Pawtrails is a website dedicated to helping pets find their forever home
 - **Success Stories**: Read heartwarming stories of pets who found their loving families through our platform.
 - **Get Involved**: Discover ways to support our cause, such as volunteering, fostering, or donating.
 
-# Other
+## Other
 
 The images used or the names of the products or any of such thing is not owned by me and is available in public domain or is completely open source.
 Thank you!
