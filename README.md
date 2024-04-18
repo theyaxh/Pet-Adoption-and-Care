@@ -13,5 +13,5 @@ Pawfect Pawtrails is a website dedicated to helping pets find their forever home
 ## Other
 
 The images used or the names of the products or any of such thing is not owned by me and is available in public domain or is completely open source.
-Made this as a college endsem project.
+Also my first project ^-^
 Thank you!
