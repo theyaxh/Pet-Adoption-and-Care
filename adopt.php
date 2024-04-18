@@ -1,4 +1,5 @@
 <?php include('header.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,4 +83,5 @@
     <script src="main.js"></script>
 </body>
 </html>
+
 <?php include('footer.php'); ?>

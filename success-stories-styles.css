@@ -122,16 +122,6 @@ body {
     color: #8B0000;
 }
 
-/* Long Stories */
-/* .long-stories {
-    max-width: 100px;
-    margin: 50px auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 30px;
-} */
-
 .long-story-card {
     display: flex;
     margin: auto;

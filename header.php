@@ -3,16 +3,15 @@ session_start();
 
 // Check if the user is logged in
 if (isset($_SESSION['user_id'])) {
-    // User is logged in, generate HTML for "Account" dropdown
+    // User is logged in, generate HTML for Logout
     $accountLink = '<li><a href="backend/logout.php">Logout</a></li>';
     $signInLink = '';
 } else {
-    // User is not logged in, generate HTML for "Sign Up/Log In" link
+    // User is not logged in, generate HTML for Sign In
     $accountLink = '';
     $signInLink = '<li><a href="signup.php">Sign In</a></li>';
 }
 ?>
-
 
 <header>
     <head>

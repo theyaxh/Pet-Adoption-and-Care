@@ -117,7 +117,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Pet care section */
 .pet-care {
     padding: 50px;
     text-align: center;
@@ -141,7 +140,7 @@ nav ul li a:hover {
 .pet-images {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; /* Add some space between images and button */
+    margin-bottom: 20px;
 }
 
 .featured-pets img {
@@ -164,7 +163,6 @@ nav ul li a:hover {
 }
 
 .auth-buttons button {
-    /* height: 30px; */
     text-align: center;
     padding: 10px 20px;
     background-color: #ff6347;
@@ -280,15 +278,15 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: calc(100vh - 100px); /* Adjust based on the height of your header and footer */
+    min-height: calc(100vh - 100px);
 }
 
 .about-section {
     position: relative;
-    width: 65%; /* Adjust as needed */
-    margin: 0 auto; /* Centers the section horizontally */
-    padding: 40px; /* Optional: Adds some padding inside the section */
-    background-color: rgb(255, 254, 249); /* Optional: Adds a semi-transparent background to the section */
+    width: 65%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgb(255, 254, 249);
     box-shadow: -10px 0 10px -5px rgba(0,0,0,0.2), 10px 0 10px -5px rgba(0,0,0,0.2);
 }
 
