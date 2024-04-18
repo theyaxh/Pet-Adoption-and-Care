@@ -154,3 +154,14 @@ body {
     color: #392C6B;
 }
 
+.success-section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.success-section h2 {
+    font-size: 38px;
+    color: #8B0000;
+    margin-bottom: 10px;
+}

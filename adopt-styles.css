@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(251, 245, 235);
+}
+
+/* Adopt Section */
+.adopt-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+ }
+ 
+ .adopt-section h1 {
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+ }
+ 
+ .adopt-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+ }
+ 
+ .adopt-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+ }
+ 
+ .step {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+ }
+ 
+ .step:hover {
+    transform: translateY(-5px);
+ }
+ 
+ .step img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+ }
+ 
+ .step h3 {
+    font-size: 20px;
+    color: #8B0000;
+    margin-bottom: 10px;
+ }
+ 
+ .step p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+ }
+ 
+ .step .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+ }
+ 
+ .step .btn:hover {
+    background-color: #e65c3e;
+ }
+ 
+ #adoption-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #adoption-form h2 {
+    font-size: 24px;
+    color: #8B0000;
+    margin-bottom: 20px;
+ }
+ 
+ .form-group {
+    margin-bottom: 20px;
+ }
+ 
+ .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #8B0000;
+    margin-bottom: 5px;
+ }
+ 
+ .form-group input,
+ .form-group textarea,
+ .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+ }
+ 
+ .form-group textarea {
+    resize: vertical;
+ }
+ 
+ #adoption-form .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+ }
+ 
+ #adoption-form .btn:hover {
+    background-color: #e65c3e;
+ }
+
+*::selection {
+   background-color: #3d3d3d;
+   color: whitesmoke;
+ }

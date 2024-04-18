@@ -1,0 +1,186 @@
+body {
+    background-color: rgb(251, 245, 235);
+}
+
+/* Hero Section */
+.heroo {
+    background-image: url('resources/veterinarian.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 60px;
+    text-align: center;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.hero-container h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    color: #8B0000;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hero-buttons button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 13px 21px;
+    background-color: #fc5335;
+    color: #fff;
+    border: 2px solid #e94408;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-buttons button:hover {
+    background-color: #ffffff71;
+    border: 2px solid #e94408;
+    color: #e94408;
+}
+
+/* Book Vet Section */
+.book-vet {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.book-vet h2 {
+    font-size: 28px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.book-vet p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#vet-booking-form {
+    max-width: 600px;
+    margin: 0 auto 100px auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #8B0000;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.book-vet .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.book-vet .btn:hover {
+    background-color: #e65c3e;
+}
+
+/* Pet Products Section */
+.pet-products {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.pet-products h2 {
+    font-size: 28px;
+    color: #8B0000;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.product-card {
+    width: 320px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

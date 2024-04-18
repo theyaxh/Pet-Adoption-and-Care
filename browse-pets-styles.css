@@ -1,0 +1,133 @@
+/* Browse Pets Section */
+body {
+    background-color: rgb(251, 245, 235);
+}
+
+.heroo {
+   background-image: url('resources/hero-browse.png');
+   background-size: cover;
+   background-position: center;
+   height: 620px;
+   width: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-container {
+   /* background-color: rgba(255, 255, 255, 0.8); */
+   margin-left: 450px;
+   padding: 60px;
+   text-align: center;
+   max-width: 800px;
+   border-radius: 10px;
+}
+
+.hero-container h1 {
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 44px;
+   color: #8B0000;
+   margin-bottom: 30px;
+}
+
+.hero-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 35px;
+}
+
+.hero-buttons button {
+   /* font-family: Arial, Helvetica, sans-serif; */
+   font-size: 17px;
+   font-weight: 500;
+   padding: 15px 25px;
+   background-color: #fc5335;
+   color: #fff;
+   border: 2px solid #e94408;
+   border-radius: 27px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.hero-buttons button:hover {
+   background-color: #ffffff71;
+   border: 2px solid #e94408;
+   color: #e94408;
+}
+
+.pet-listings {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 40px 20px;
+}
+
+.pet-listings h2 {
+   margin-left: 18px;
+   font-size: 30px;
+   color: #8B0000;
+   margin-bottom: 10px;
+}
+
+.pet-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 30px;
+   margin-bottom: 40px;
+}
+
+.pet-card {
+   width: 320px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 20px;
+}
+
+.pet-card:hover {
+   transform: translateY(-5px);
+}
+
+.pet-card img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+.pet-card h3 {
+   font-size: 20px;
+   color: #8B0000;
+   margin: 10px;
+}
+
+.pet-card p {
+   font-size: 16px;
+   color: #333;
+   margin: 5px 10px;
+}
+
+.adopt-btn {
+   display: block;
+   width: calc(100% - 20px);
+   padding: 10px;
+   background-color: #ff6347;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 4px;
+   margin: 10px;
+   transition: background-color 0.3s;
+}
+
+.adopt-btn:hover {
+   background-color: #e65c3e;
+}
+
+*::selection {
+   background-color: #3d3d3d;
+   color: whitesmoke;
+ }
