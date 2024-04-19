@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($conn->query($sql) === TRUE) {
             // Automatically log in the user after registration
             $_SESSION['user_id'] = $conn->insert_id;
-            header("Location: ../index.php"); // Redirect to home page
+            header("Location: ../home.php"); // Redirect to home page
             exit;
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;

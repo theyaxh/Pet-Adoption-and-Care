@@ -33,7 +33,7 @@
 </head>
 <body>
     <div class="image-wrapper">
-        <a class="paw" href="index.php">
+        <a class="paw" href="home.php">
             <img style="margin-top: 40px; margin-bottom: 40px;" src="resources/Pawfect Pawtrails-transparent.png" alt="Pawfect Pawtrails">
         </a>
     </div>
@@ -41,7 +41,7 @@
         <div>
             <section class="success-section">
                 <h2>Your Application Was Received!</h2>
-                <p>Return back to <a href="index.php">Home Page</a></p>
+                <p>Return back to <a href="home.php">Home Page</a></p>
             </section>
         </div>
     </main>

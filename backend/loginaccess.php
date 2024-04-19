@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $stored_password)) {
             // Password is correct, create session and redirect
             $_SESSION['user_id'] = $row['id'];
-            header("Location: index.php");
+            header("Location: home.php");
             exit;
         } 
         {

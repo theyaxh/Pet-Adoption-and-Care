@@ -20,7 +20,7 @@ if (isset($_SESSION['user_id'])) {
         <link rel="icon" type="icon/x-icon" href="../resources/Pawfect Pawtrails-4.png">
     </head>
     <div class="header-container">
-        <a href="../index.php">
+        <a href="../home.php">
             <div class="logo-section">
                 <img id="paw" src="../resources/Pawfect Pawtrails-3.png" alt="logo">
                 <img id="paw2" src="../resources/Pawfect Pawtrails-5.png" alt="logo">
@@ -28,7 +28,7 @@ if (isset($_SESSION['user_id'])) {
         </a>
         <nav>
             <ul>
-                <li><a href="../index.php">Home</a></li>
+                <li><a href="../home.php">Home</a></li>
                 <li><a href="../browse-pets.php">Browse Pets</a></li>
                 <li><a href="../adopt.php">Adopt</a></li>
                 <li><a href="../success-stories.php">Success Stories</a></li>

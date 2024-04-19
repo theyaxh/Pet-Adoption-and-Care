@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="image-wrapper">
-        <a class="paw" href="index.php">
+        <a class="paw" href="home.php">
             <img src="resources/Pawfect Pawtrails-transparent.png" alt="Pawfect Pawtrails">
         </a>
     </div>
