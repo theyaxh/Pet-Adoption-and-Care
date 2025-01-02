@@ -1,1 +1,19 @@
+# Node.js dependencies
+node_modules/
 
+# Logs
+logs/
+*.log
+
+# Vercel/Netlify Build Output
+.vercel/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# OS Files
+.DS_Store
+Thumbs.db
